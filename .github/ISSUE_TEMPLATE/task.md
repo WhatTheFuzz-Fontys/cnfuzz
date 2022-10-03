@@ -1,7 +1,7 @@
 ---
 name: Task
 about: Create a task
-project: Sprint Board
+projects: Sprint Board
 title: ''
 labels: 'task'
 assignees: ''
