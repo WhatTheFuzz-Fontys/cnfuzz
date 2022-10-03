@@ -2,7 +2,7 @@
 name: User story
 about: Create a user story
 title: ''
-labels: User Story
+labels: user story
 assignees: ''
 
 ---
