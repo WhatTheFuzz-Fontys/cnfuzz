@@ -7,15 +7,22 @@ assignees: ''
 
 ---
 
-**As a** [user] **I want to** [goal of your story], **so I** [reason of your story]
+**As a** [entity] **I want to** [goal of your story], **so I** [reason of your story]
 
 ### Description
 
 Write a short description of your userstory.
 
+### Requirements
+ - [ ] #_(issuenumer)_ needs to be closed first.
+ - [ ] ...
+
 ### Acceptance criteria
 
-1. Criteria 1
-2. Criteria 2 ...
+ - [ ] Criteria 1
+ - [ ] ...
 
-### Tools
+ 
+### Steps
+ 1. Step one
+ 2. ...
