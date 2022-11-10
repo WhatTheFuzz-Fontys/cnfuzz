@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-**As a** [entity] **I want to** [goal of your story], **so I** [reason of your story]
+As a [entity] I want to [goal of your story], so I [reason of your story]
 
 ### Description
 
