@@ -1,0 +1,39 @@
+Restler Information: 0 : Starting task Fuzz...
+    DateTime=2023-01-12T22:37:07.3214512Z
+Restler Information: 0 : Launching 'python3 --version'
+    DateTime=2023-01-12T22:37:07.3722745Z
+Restler Information: 0 : Launching 'python --version'
+    DateTime=2023-01-12T22:37:07.3723042Z
+Restler Information: 0 : Process execution terminated in 00:00:00.0197431 with exit code 0x0: 'python3 --version'
+    DateTime=2023-01-12T22:37:07.3969067Z
+Restler Information: 0 : (84) python3 --version exited with code: 0
+    DateTime=2023-01-12T22:37:07.4012660Z
+Restler Information: 0 : Launching 'python3 -B "/RESTler/restler/../engine/restler.py" --restler_grammar "/Compile/grammar.py" --custom_mutations "/Compile/dict.json" --set_version 9.1.0  --token_refresh_interval 999999 --token_refresh_cmd "python3 /scripts/auth.py 'Test api for fuzzer poc' 'Authorization:  0d5989ed-d60c-470e-b1b5-576fcf0f5d8c'"  --no_ssl    --enable_checkers * --disable_checkers namespacerule --time_budget 0.025000 --target_ip 10-244-0-5.default.pod --target_port 8080 --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode bfs-fast'
+    DateTime=2023-01-12T22:37:07.4123507Z
+Restler Information: 0 : Process execution terminated in 00:01:30.1783101 with exit code 0x0: 'python3 -B "/RESTler/restler/../engine/restler.py" --restler_grammar "/Compile/grammar.py" --custom_mutations "/Compile/dict.json" --set_version 9.1.0  --token_refresh_interval 999999 --token_refresh_cmd "python3 /scripts/auth.py 'Test api for fuzzer poc' 'Authorization:  0d5989ed-d60c-470e-b1b5-576fcf0f5d8c'"  --no_ssl    --enable_checkers * --disable_checkers namespacerule --time_budget 0.025000 --target_ip 10-244-0-5.default.pod --target_port 8080 --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode bfs-fast'
+    DateTime=2023-01-12T22:38:37.5907337Z
+Restler Information: 0 : (89) python3 -B "/RESTler/restler/../engine/restler.py" --restler_grammar "/Compile/grammar.py" --custom_mutations "/Compile/dict.json" --set_version 9.1.0  --token_refresh_interval 999999 --token_refresh_cmd "python3 /scripts/auth.py 'Test api for fuzzer poc' 'Authorization:  0d5989ed-d60c-470e-b1b5-576fcf0f5d8c'"  --no_ssl    --enable_checkers * --disable_checkers namespacerule --time_budget 0.025000 --target_ip 10-244-0-5.default.pod --target_port 8080 --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode bfs-fast exited with code: 0
+    DateTime=2023-01-12T22:38:37.5907748Z
+Restler Information: 0 : Launching 'dotnet "/RESTler/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/Fuzz" --output_dir "/Fuzz/ResponseBuckets" --dictionary_file "/Compile/dict.json" --max_instances_per_bucket 10'
+    DateTime=2023-01-12T22:38:37.5974277Z
+Restler Information: 0 : Process execution terminated in 00:00:00.9178725 with exit code 0x86: 'dotnet "/RESTler/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/Fuzz" --output_dir "/Fuzz/ResponseBuckets" --dictionary_file "/Compile/dict.json" --max_instances_per_bucket 10'
+    DateTime=2023-01-12T22:38:38.5153671Z
+Restler Information: 0 : (106) dotnet "/RESTler/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/Fuzz" --output_dir "/Fuzz/ResponseBuckets" --dictionary_file "/Compile/dict.json" --max_instances_per_bucket 10 exited with code: 134
+    DateTime=2023-01-12T22:38:38.5153977Z
+Restler Error: 0 : Results analyzer for logs in /Fuzz failed.
+    DateTime=2023-01-12T22:38:38.5165180Z
+Restler Information: 0 : Request coverage (successful / total): 6 / 6
+    DateTime=2023-01-12T22:38:38.6200465Z
+Restler Information: 0 : Attempted requests: 6 / 6
+    DateTime=2023-01-12T22:38:38.6200725Z
+Restler Information: 0 : Bugs were found!
+    DateTime=2023-01-12T22:38:38.6237879Z
+Restler Information: 0 : Bug buckets:
+    DateTime=2023-01-12T22:38:38.6237992Z
+Restler Information: 0 :
+InvalidDynamicObjectChecker_20x: 1
+    DateTime=2023-01-12T22:38:38.6242535Z
+Restler Information: 0 : Task Fuzz succeeded.
+    DateTime=2023-01-12T22:38:38.6257720Z
+Restler Information: 0 : Collecting logs...
+    DateTime=2023-01-12T22:38:38.6280138Z

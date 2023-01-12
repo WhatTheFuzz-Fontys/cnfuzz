@@ -1,0 +1,25 @@
+################################################################################
+ InvalidDynamicObjectChecker_20x
+
+ Hash: InvalidDynamicObjectChecker_20x_39d4abd8de5850f6219997f1125f4b7adda5217f
+
+ To attempt to reproduce this bug using restler, run restler with the command
+ line option of --replay_log <path_to_this_log>.
+ If an authentication token is required, you must also specify the token_refresh_cmd.
+
+ This log may contain specific values for IDs or names that were generated
+ during fuzzing, using the fuzzing dictionary. Such names will be re-played
+ without modification. You must update the replay log manually with any changes
+ required to execute the requests in your environment (for example, replacing
+ pre-created account, subscription, or other resource IDs, as needed).
+################################################################################
+
+-> POST /api/todo HTTP/1.1\r\nAccept: application/json\r\nHost: \r\nContent-Type: application/json\r\nAUTHORIZATION TOKEN\r\n\r\n{\n    "text":"Go get groceries"}\r\n
+! producer_timing_delay 0
+! max_async_wait_time 20
+PREVIOUS RESPONSE: 'HTTP/1.1 200 OK\r\nContent-Type: application/json; charset=utf-8\r\nDate: Thu, 12 Jan 2023 22:37:26 GMT\r\nContent-Length: 37\r\n\r\n{"id":1592,"text":"Go get groceries"}'
+
+-> GET /api/todo/1592?injected_query_string=123 HTTP/1.1\r\nAccept: application/json\r\nHost: \r\nAUTHORIZATION TOKEN\r\n\r\n
+! producer_timing_delay 0
+! max_async_wait_time 0
+PREVIOUS RESPONSE: 'HTTP/1.1 200 OK\r\nContent-Type: application/json; charset=utf-8\r\nDate: Thu, 12 Jan 2023 22:37:26 GMT\r\nContent-Length: 37\r\n\r\n{"id":1592,"text":"Go get groceries"}'
