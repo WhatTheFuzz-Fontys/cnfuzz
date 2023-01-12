@@ -105,6 +105,13 @@ func run(l logger.Logger, args Args) {
 	l.V(logger.DebugLevel).Info("executing Restler commands")
 	restler.ExecuteRestlerCmds(l, config.RunCnf.IsDryRun, args.timeBudget, info)
 	l.V(logger.InfoLevel).Info("job finished, exiting now ...")
+
+	if !args.dryRun {
+		output := restler.ParseRestlerOutput(l, "/Fuzz")
+		var _ = output
+
+		// TODO do something with restler output
+	}
 }
 
 // writeDocToFile write unparsed Open API doc to the file system
